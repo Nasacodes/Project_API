@@ -14,7 +14,7 @@ function isValidDate(dateString) {
     }
     return { valid: true, message: "Date is valid", date: dateValue.toDate() };
   }
-}
+};
 
 module.exports.isValidDate = isValidDate;
 

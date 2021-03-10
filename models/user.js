@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
         dateOfbirth: { 
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true
+            unique: true,
         },
     });
     return User;
