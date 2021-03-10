@@ -13,7 +13,7 @@ router.post("/register", (req, res) => {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
-        dateOfbirth: dateOfbirth.date
+        dateOfbirth: dateOfbirth.date,
     })
     .then((submitedUser) => res.send("Successfuly registered"));
   } else {
