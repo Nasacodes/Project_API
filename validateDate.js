@@ -6,7 +6,7 @@ function isValidDate(dateString) {
   if (!isValid) {
     return { valid: false, message: "Invalid date string" }; // you can get more fine grained information from moment
   } else {
-    if (moment(dateValue).isAfter(moment())) {
+    if (moment(dateValue).isAfter(moment())) {                // yeah i just finally configured "future validation" on this line.
       return {
         valid: false,
         message: "Date of birth cannot be in the future",
