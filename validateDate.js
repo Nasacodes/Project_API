@@ -12,7 +12,7 @@ function isValidDate(dateString) {
         message: "Date of birth cannot be in the future",
       };
     }
-    return { valid: true, message: "Date is valid", date: dateValue.toDate() };
+    return { valid: true, message: dateValue.toString(), date: dateValue.toDate()  } 
   }
 };
 
